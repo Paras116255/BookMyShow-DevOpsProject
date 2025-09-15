@@ -133,7 +133,7 @@ eksctl create nodegroup --cluster=paras05-eks \
                        --nodes-max=4 \
                        --node-volume-size=20 \
                        --ssh-access \
-                       --ssh-public-key=newac \
+                       --ssh-public-key=newkey \
                        --managed \
                        --asg-access \
                        --external-dns-access \
