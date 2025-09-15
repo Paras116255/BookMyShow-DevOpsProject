@@ -451,7 +451,7 @@ pipeline {
     environment {
         SCANNER_HOME = tool 'sonar-scanner'
         DOCKER_IMAGE = 'paras1112/bms:latest'
-        EKS_CLUSTER_NAME = 'kastro-eks'
+        EKS_CLUSTER_NAME = 'paras05-eks'
         AWS_REGION = 'ap-northeast-1'
     }
 
@@ -464,7 +464,7 @@ pipeline {
 
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/paras1112Kiran/Book-My-Show.git'
+                git branch: 'main', url: 'https://github.com/Paras116255/BookMyShow-DevOpsProject.git'
                 sh 'ls -la'  // Verify files after checkout
             }
         }
